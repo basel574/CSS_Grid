@@ -1,0 +1,30 @@
+div {
+    box-sizing: border-box;
+    padding: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    outline: 2px solid blue;
+    grid-gap: 1rem;
+    margin: 0 auto;
+    width: 50%;
+    grid-auto-flow: dense;
+}
+.wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font: 4rem sans-serif;
+}
+.wrapper > div:nth-child(odd) {
+    background-color: #7c0090;
+}
+.wrapper > div:nth-child(even) {
+    background-color: #c245d6;
+}
+.item5 {
+    grid-column: span 3;
+
+}
